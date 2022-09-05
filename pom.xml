@@ -25,6 +25,14 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math3</artifactId>
+			<version>3.6.1</version>
+		</dependency>
+
 		<!-- SWAGGER-->
 
 		<dependency>
@@ -42,11 +50,11 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>nexus</id>
-			<url>34.175.50.60:8081/repository/prueba</url>
+			<url>34.175.86.230:8081/repository/prueba/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
-	<build>		
+	<build>
 		<finalName>sumatorio-nexus</finalName>
 		<plugins>
 			<plugin>
@@ -68,7 +76,7 @@
 				</executions>
 				<configuration>
 					<serverId>nexus</serverId>
-					<nexusUrl>34.175.50.60:8081/repository/prueba/</nexusUrl>
+					<nexusUrl>34.175.86.230:8081/repository/prueba/</nexusUrl>
 					<skipStaging>true</skipStaging>
 				</configuration>
 			</plugin>
